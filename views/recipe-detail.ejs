@@ -1,0 +1,43 @@
+<header>
+<link rel="stylesheet" href="/public/style.css">
+</header>
+
+<h1>
+<%=recipe.name%>
+</h1>
+
+
+<h3>
+Created by:
+<%=recipe.username%>
+</h3>
+
+
+<h2>
+Ingredients
+</h2>
+
+<p>
+<%=recipe.ingredients%>
+</p>
+
+
+
+<h2>
+Instructions
+</h2>
+
+<p>
+<%=recipe.instructions%>
+</p>
+
+
+
+<form method="POST" action="/recipes/delete/<%=recipe.id%>">
+
+
+<button>
+Delete
+</button>
+
+</form>

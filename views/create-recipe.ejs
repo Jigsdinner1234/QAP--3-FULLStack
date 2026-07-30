@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="/public/style.css">
+<h1>
+Create Recipe
+</h1>
+
+
+<% if(error){ %>
+
+<p style="color:red">
+<%=error%>
+</p>
+
+<% } %>
+
+
+<form method="POST">
+
+
+<input 
+name="name"
+placeholder="Recipe Name">
+
+
+<textarea 
+name="ingredients"
+placeholder="Ingredients">
+</textarea>
+
+
+<textarea
+name="instructions"
+placeholder="Instructions">
+</textarea>
+
+
+<button>
+Create
+</button>
+
+</form>

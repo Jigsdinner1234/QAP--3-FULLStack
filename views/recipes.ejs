@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="/public/style.css">
+<h1>
+My Recipes
+</h1>
+
+
+<a href="/recipes/create">
+Create New Recipe
+</a>
+
+
+<ul>
+
+<% recipes.forEach(recipe=>{ %>
+
+<li>
+
+<a href="/recipes/<%=recipe.id%>">
+
+<%=recipe.name%>
+
+</a>
+
+
+<% if(user.role==="admin"){ %>
+
+- Created by <%=recipe.username%>
+
+<% } %>
+
+
+</li>
+
+
+<% }) %>
+
+
+</ul>
+
+
+<a href="/logout">
+Logout
+</a>

@@ -1,0 +1,40 @@
+<header>
+<link rel="stylesheet" href="/public/style.css">
+</header>
+
+<h1>🍲 Personal Recipe Box</h1>
+
+<p>
+Store and manage your favourite recipes!
+</p>
+
+
+<% if(user){ %>
+
+<h3>
+Welcome <%= user.username %>
+</h3>
+
+<a href="/recipes">
+My Recipes
+</a>
+
+<a href="/logout">
+Logout
+</a>
+
+
+<% } else { %>
+
+
+<a href="/login">
+Login
+</a>
+
+
+<a href="/register">
+Register
+</a>
+
+
+<% } %>

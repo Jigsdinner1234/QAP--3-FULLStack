@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/public/style.css">
+<h1>Create Account</h1>
+
+
+<% if(error){ %>
+
+<p style="color:red">
+<%=error%>
+</p>
+
+<% } %>
+
+
+<form method="POST">
+
+<input name="username"
+placeholder="Username">
+
+
+<input name="email"
+placeholder="Email">
+
+
+<input 
+type="password"
+name="password"
+placeholder="Password">
+
+
+<button>
+Register
+</button>
+
+
+</form>
